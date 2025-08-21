@@ -126,6 +126,7 @@ void	main_add_vector(Span &sp)
 int	main(void)
 {
 	srand(time(NULL));
+
 	title("CREATE A SPAN");
 	Span	sp1 = Span(SIZE);
 	std::cout << std::endl;
