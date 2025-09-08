@@ -96,6 +96,7 @@ int	main(void)
 {
 	title("MUTANT STACK");
 	main_mutant();
+	std::cout << std::endl;
 
 	title("LIST");
 	main_list();
