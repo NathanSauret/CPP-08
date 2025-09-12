@@ -49,6 +49,13 @@ void	Span::addRange( std::vector<int>::iterator begin, std::vector<int>::iterato
 	this->_vec.insert(this->_vec.end(), begin, end);
 }
 
+void	Span::addVector( std::vector<int> v )
+{
+	if (std::distance(v.begin(), v.end()) > _vec.capacity() - _vec.size())
+		throw FullException();
+	this->_vec.insert(this->_vec.end(), v.begin(), v.end());
+}
+
 int	Span::shortestSpan() const
 {
 	if (this->_vec.size() <= 1)

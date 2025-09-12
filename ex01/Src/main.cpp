@@ -102,7 +102,7 @@ void	main_add_vector(Span &sp)
 	sub_title("Try adding vector to span");
 	try
 	{
-		sp.addRange(v.begin(), v.end());
+		sp.addVector(v);
 	}
 	catch(const std::exception& e)
 	{
@@ -113,7 +113,7 @@ void	main_add_vector(Span &sp)
 	sub_title("Try adding another vector to span (but it's already full)");
 	try
 	{
-		sp.addRange(v.begin(), v.end());
+		sp.addVector(v);
 	}
 	catch(const std::exception& e)
 	{

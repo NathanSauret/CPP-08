@@ -63,6 +63,7 @@ class Span
 		// Public class member functions
 		void	addNumber( int n );
 		void	addRange( std::vector<int>::iterator begin, std::vector<int>::iterator end );
+		void	addVector( std::vector<int> v );
 		int		shortestSpan() const;
 		int		longestSpan() const;
 
